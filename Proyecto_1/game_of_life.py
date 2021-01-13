@@ -1,3 +1,4 @@
+# Elaborado para el taller de herramientas computacionales
 # Funciones propias
 # Comentario
 from packages import *
