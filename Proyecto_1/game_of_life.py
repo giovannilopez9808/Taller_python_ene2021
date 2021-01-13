@@ -1,4 +1,5 @@
 # Funciones propias
+# Comentario
 from packages import *
 parameters = {
     "dimension": 100,
