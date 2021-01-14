@@ -9,15 +9,15 @@ def fcc_lattice(pos, a, nn, l):
     for i in range(nn):
         for j in range(nn):
             for k in range(4):
-                pos[m,0] = (i+sx[k]+sh)*a-l/2
-                pos[m,1] = (j+sy[k]+sh)*a-l/2
+                pos[m, 0] = (i+sx[k]+sh)*a-l/2
+                pos[m, 1] = (j+sy[k]+sh)*a-l/2
                 m += 1
     return pos
 
 
 def periodic_boundary(r, l):
-    cond=np.abs(r)>l
-    r[cond]+=-l*np.array(r[cond]/l,dtype=int)
+    cond = np.abs(r) > l
+    r[cond] += -l*np.array(r[cond]/l, dtype=int)
     return r
 
 
