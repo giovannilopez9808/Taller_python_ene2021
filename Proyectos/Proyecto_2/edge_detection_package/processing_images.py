@@ -1,7 +1,5 @@
 from .post_processing_images import *
-from PIL import Image, ImageDraw
-import matplotlib.pyplot as plt
-from scipy import fftpack
+from PIL import Image
 import numpy as np
 import cv2
 
