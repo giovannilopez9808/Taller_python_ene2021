@@ -1,1 +1,6 @@
 *.mp4
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.aux
