@@ -1,50 +1,84 @@
-\documentclass{article}
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage{scrextend}
+\usepackage{vmargin}
 \usepackage[utf8]{inputenc}
-
+\usepackage[spanish]{babel}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage[usenames]{color}
+\usepackage{float}
+\parindent=0mm
+\pagestyle{empty}
+\definecolor{citecolor}{rgb}{.12,.54,.11}
+\definecolor{urlcolor}{RGB}{43, 137, 30 }
+\definecolor{1ee592}{RGB}{30,229,146}
+\definecolor{1bac70}{RGB}{27,172,112}
+\definecolor{f38638}{RGB}{243,134,56}
+\definecolor{black}{RGB}{0,0,0}
+\definecolor{gray}{RGB}{156,156,156}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=urlcolor,
+    citecolor=citecolor,
+}
 \title{Temario}
 \author{giovannilopez9808 }
 \date{January 2021}
 
 \begin{document}
 \begin{enumerate}
-    \item Principios de git 
-    \item Tipo de datos (sencillos)
+    \item Principios de git / control de versiones
+    \item Uso de google colab
+    \item Tipo de datos, variables y como usarlas
+    \begin{enumerate}
+        \item Booleano
+        \item Float
+        \item integrales
+        \item String
+        \item Diccionarios, listas y tuplas
+    \end{enumerate}
     \item If y else
     \item Ciclos, for y while
-    \item Funciones (refractor)
     \begin{enumerate}
-        \item Primero como contador y después como iterar
+        \item Contadores
+        \item Iterativos
     \end{enumerate}
-    \item Numpy
-    \begin{itemize}
+    \item Funciones
+    \item Numpy, pandas
+    \begin{enumerate}
         \item Operaciones con matrices
-        \item Primer proyectito - Juego de la vida con caja negra de grafica
+        \item Primer proyecto - Programar el \href{https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life}{Juego de la vida}
         \item Lectura y escritura de datos
-    \end{itemize}
+    \end{enumerate}
     \item Matplotlib
-    \begin{itemize}
-        \item Scatter
-        \item Plot
+    \begin{enumerate}
+        \item Scatter, plot
         \item Mapas de colores/imshow
         \item Leyendas con latex
-        \item Segundo proyecto - Detección de bordes 
-    \end{itemize}
-    \item Problemas matemáticos de forma numérica - Scipy
-    \begin{itemize}
+        \item Segundo proyecto - \href{https://en.wikipedia.org/wiki/Edge_detection}{Detección de bordes}
+    \end{enumerate}
+    \item Problemas matemáticos de resueltos de manera numérica - Scipy
+    \begin{enumerate}
         \item Resolver integrales
         \item Resolver ecuaciones diferencial
-        \item Tercer proyecto - Péndulo doble
+        \item Tercer proyecto - \href{https://en.wikipedia.org/wiki/Double_pendulum}{Péndulo doble}
         \item Obtener eigenvalores y eigenvectores
         \item Estadística descriptiva
         \item Regresión lineal
-        \item Cuarto proyecto - Simulaciones LJ
-    \end{itemize}
+        \item Cuarto proyecto - \href{https://es.wikipedia.org/wiki/Potencial_de_Lennard-Jones}{Simulaciones con el potencial de Lennard Jones}
+    \end{enumerate}
     \item Problemas avanzados
-    \begin{itemize}
-        \item Librería de 3Blue1Brown
-        \item Inteligencia artificial
-        \item Teleoperación cuántica
-    \end{itemize}
+    \begin{enumerate}
+        \item Librería de \href{https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw}{3Blue1Brown}
+        \item \href{https://es.wikipedia.org/wiki/Inteligencia_artificial}{Inteligencia artificial}
+        \item \href{https://es.wikipedia.org/wiki/Teleportaci%C3%B3n_cu%C3%A1ntica}{Teleportación cuántica}
+    \end{enumerate}
     \item Proyecto final - optional
 \end{enumerate}
 \end{document}
