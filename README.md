@@ -49,8 +49,9 @@ Here's why:
 - You should element DRY principles to the rest of your life :smile:
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+
 <details open="close">
-  <summary>Tabla de contenido</summary>
+  <summary>Temario</summary>
   <ol>
     <li>Principios de git / control de versiones</li>
     <li>Usos de Google Colab</li>
@@ -62,10 +63,32 @@ Of course, no one template will serve all projects since your needs may be diffe
     <ul>
     <li>Operaciones con matrices</li>
     <li>Primer proyecto - Programar el <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Juego de la vida</a></li>
+    <li>Lectura y escritura de datos</li>
     </ul>
     <li>Matplotlib</li>
+    <ul>
+    <li>Scatter, plot</li>
+    <li>Mapas de colores, imshow</li>
+    <li>Leyendas con LaTeX</li>
+    <li>Segundo proyecto - <a href="https://en.wikipedia.org/wiki/Edge_detection">Detección de bordes</a></li>
+    <li></li>
+    </ul>
     <li>Problemas matemáticos resueltos de manera numérica - Scipy</li>
+    <ul>
+    <li>Resolver integrales</li>
+    <li>Resolver ecuaciones diferenciales</li>
+    <li>Tercer proyecto - <a href="https://en.wikipedia.org/wiki/Double_pendulum">Péndulo doble</a></li>
+    <li>Obtener eigenvalores y eigenvectores</li>
+    <li>Estadística descriptiva</li>
+    <li>Regresión lineal</li>
+    <li>Cuarto proyecto - <a href="https://es.wikipedia.org/wiki/Potencial_de_Lennard-Jones">Simulaciones con el potencial de Lennard Jones</a></li>
+    </ul>
     <li>Problemas avanzados</li>
+    <ul>
+    <li>Libreria de <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/Inteligencia_artificial">Inteligencia artificial</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/Teleportaci%C3%B3n_cu%C3%A1ntica">Teleportación cuántica</a></li>
+    </ul>
     <li>Proyecto final - opcional</li>
   </ol>
 </details>
@@ -85,7 +108,7 @@ Google para que puedas usarlos con Google Colab.
    ```sh
    pip install -r requirements.txt
    ```
-   o 
+   o
    ```sh
    pip3 install -r requirements.txt
    ```
