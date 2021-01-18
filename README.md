@@ -31,7 +31,7 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributing">Con1tributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -52,21 +52,21 @@ Of course, no one template will serve all projects since your needs may be diffe
 <details open="close">
   <summary>Tabla de contenido</summary>
   <ol>
-    <li><a>Principios de git / control de versiones</a></li>
-    <li><a>Usos de Google Colab</a></li>
-    <li><a>Tipos de datos, variables y como usarlas</a></li>
-    <li><a>If y else</a></li>
-    <li><a>Ciclos, for y while</a></li>
-    <li><a>Funciones</a></li>
-    <li><a>Numpy, Pandas</a></li>
+    <li>Principios de git / control de versiones</li>
+    <li>Usos de Google Colab</li>
+    <li>Tipos de datos, variables y como usarlas</li>
+    <li>If y else</li>
+    <li>Ciclos, for y while</li>
+    <li>Funciones</li>
+    <li>Numpy, Pandas</li>
     <ul>
-    <li><a>Operaciones con matrices</a></li>
-    <li><a>Primer proyecto - Programar el [Juego de la visa](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)</a></li>
+    <li>Operaciones con matrices</li>
+    <li>Primer proyecto - Programar el <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Juego de la vida</a></li>
     </ul>
-    <li><a>Matplotlib</a></li>
-    <li><a>Problemas matemáticos resueltos de manera numérica - Scipy</a></li>
-    <li><a>Problemas avanzados</a></li>
-    <li><a>Proyecto final - opcional</a></li>
+    <li>Matplotlib</li>
+    <li>Problemas matemáticos resueltos de manera numérica - Scipy</li>
+    <li>Problemas avanzados</li>
+    <li>Proyecto final - opcional</li>
   </ol>
 </details>
 
