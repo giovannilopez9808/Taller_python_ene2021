@@ -1,12 +1,11 @@
 from interaction_package import *
-from math import pi
 paramters = {
     "rho": 0.3,
     "dt": 0.01,
     "ngrx": 1000,
     "temperatura": 0.6,
-    "pasos": 2000000,
-    "print": 10000,
+    "pasos": 20,
+    "print": 1,
 }
 system = gas(paramters["ngrx"],
              paramters["temperatura"],
