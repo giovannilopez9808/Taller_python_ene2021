@@ -28,27 +28,17 @@
 <details open="open">
   <summary>Tabla de contenido</summary>
   <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#contributing">Con1tributing</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about-the-project">Información</a></li>
+    <li><a href="#prerequisites">Prerequisitos</a></li>
+    <li><a href="#installation">Instalación</a></li>
+    <li><a href="#contributing">Contribuciones</a></li>
+    <li><a href="#contact">Contacto</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
-
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+## Información
 
 <details open="open">
     <summary><h1>Temario</h1></summary>
@@ -127,12 +117,12 @@ Of course, no one template will serve all projects since your needs may be diffe
     </ol>
   </details>
 
-### Prerequisites
+### Prerequisitos
 
 El único requisito es que tengas en tu maquina instalado python, o en su defecto guardes los archivos en la nube de
 Google para que puedas usarlos con Google Colab.
 
-### Installation
+### Instación
 
 1. Clona el repositorio
    ```sh
@@ -149,7 +139,7 @@ Google para que puedas usarlos con Google Colab.
 
 <!-- CONTRIBUTING -->
 
-## Contributing
+## Contribuciones
 
 Las contribuciones hacen que la comunidad del código abierto sea un grandioso lugar para aprender, inspirar y crear.
 Cualqier contribución que quieras realizar sera **gratamente recibida**.
@@ -162,7 +152,7 @@ Cualqier contribución que quieras realizar sera **gratamente recibida**.
 
 <!-- CONTACT -->
 
-## Contact
+## Contacto
 
 Giovanni Gamaliel López Padilla - giovannilopez9808@gmail.com <br>
 Jesús Eduardo Loera Casas - jesusloera45@gmail.com
