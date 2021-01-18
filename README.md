@@ -23,19 +23,6 @@
     <a href="https://github.com/giovannilopez9808/Taller_python_ene2021/issues">Informa sobre una aportación</a>
   </p>
 </p>
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Tabla de contenido</summary>
-  <ol>
-    <li><a href="#about-the-project">Información</a></li>
-    <li><a href="#prerequisites">Prerequisitos</a></li>
-    <li><a href="#installation">Instalación</a></li>
-    <li><a href="#contributing">Contribuciones</a></li>
-    <li><a href="#contact">Contacto</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 
 ## Información
