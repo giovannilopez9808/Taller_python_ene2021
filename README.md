@@ -49,8 +49,26 @@ Here's why:
 - You should element DRY principles to the rest of your life :smile:
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+<details open="close">
+  <summary>Tabla de contenido</summary>
+  <ol>
+    <li><a>Principios de git / control de versiones</a></li>
+    <li><a>Usos de Google Colab</a></li>
+    <li><a>Tipos de datos, variables y como usarlas</a></li>
+    <li><a>If y else</a></li>
+    <li><a>Ciclos, for y while</a></li>
+    <li><a>Funciones</a></li>
+    <li><a>Numpy, Pandas</a></li>
+    <li>
+    <ul><a>Operaciones con matrices</a></ul>
+    <ul><a>Primer proyecto - Programar el [Juego de la visa](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)</a></ul>
+    </li>
+    <li><a>Matplotlib</a></li>
+    <li><a>Problemas matemáticos resueltos de manera numérica - Scipy</a></li>
+    <li><a>Problemas avanzados</a></li>
+    <li><a>Proyecto final - opcional</a></li>
+  </ol>
+</details>
 
 ### Prerequisites
 
