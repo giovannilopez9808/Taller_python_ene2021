@@ -17,11 +17,10 @@
     <a href="https://github.com/giovannilopez9808/Taller_python_ene2021"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/giovannilopez9808/Taller_python_ene2021">View Demo</a>
     ·
-    <a href="https://github.com/giovannilopez9808/Taller_python_ene2021/issues">Report Bug</a>
+    <a href="https://github.com/giovannilopez9808/Taller_python_ene2021/issues">Reporta errores</a>
     ·
-    <a href="https://github.com/giovannilopez9808/Taller_python_ene2021/issues">Request Feature</a>
+    <a href="https://github.com/giovannilopez9808/Taller_python_ene2021/issues">Informa sobre una aportación</a>
   </p>
 </p>
 
@@ -35,13 +34,8 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>+
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#installation">Installation</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -73,55 +67,40 @@ This section should list any major frameworks that you built your project using.
 - [JQuery](https://jquery.com)
 - [Laravel](https://laravel.com)
 
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+El único requisito es que tengas en tu maquina instalado python, o en su defecto guardes los archivos en la nube de
+Google para que puedas usarlos con Google Colab.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clona el repositorio
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/giovannilopez9808/Taller_python_ene2021.git
    ```
-3. Install NPM packages
+2. Instala las dependencias
    ```sh
    npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <!-- CONTRIBUTING -->
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Las contribuciones hacen que la comunidad del código abierto sea un grandioso lugar para aprender, inspirar y crear.
+Cualqier contribución que quieras realizar sera **gratamente recibida**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Realiza un fork al proyecto
+2. Crea tu propia branch (`git checkout -b feature/AmazingFeature`)
+3. Realiza el commit a tus cambios (`git commit -m 'Agrego una nueva acción'`)
+4. Actualiza tu repositorio (`git push origin feature/AmazingFeature`)
+5. Realiza un pull request para que podamos integrar tus cambios
 
 <!-- CONTACT -->
 
 ## Contact
 
-Giovanni Gamaliel López Padilla - giovannilopez9808@gmail.com
+Giovanni Gamaliel López Padilla - giovannilopez9808@gmail.com <br>
 Jesús Eduardo Loera Casas - jesusloera45@gmail.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
