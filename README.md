@@ -59,10 +59,10 @@ Of course, no one template will serve all projects since your needs may be diffe
     <li><a>Ciclos, for y while</a></li>
     <li><a>Funciones</a></li>
     <li><a>Numpy, Pandas</a></li>
-    <li>
-    <ul><a>Operaciones con matrices</a></ul>
-    <ul><a>Primer proyecto - Programar el [Juego de la visa](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)</a></ul>
-    </li>
+    <ul>
+    <li><a>Operaciones con matrices</a></li>
+    <li><a>Primer proyecto - Programar el [Juego de la visa](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)</a></li>
+    </ul>
     <li><a>Matplotlib</a></li>
     <li><a>Problemas matemáticos resueltos de manera numérica - Scipy</a></li>
     <li><a>Problemas avanzados</a></li>
