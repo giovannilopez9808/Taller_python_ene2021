@@ -7,14 +7,14 @@
 <br />
 <p align="center">
   <a href="https://github.com/giovannilopez9808/Taller_python_ene2021">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="300" height="200">
   </a>
 
   <h3 align="center">Introducción a Python</h3>
 
   <p align="center">
     <br />
-    <a href="https://github.com/giovannilopez9808/Taller_python_ene2021"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/giovannilopez9808/Taller_python_ene2021"><strong>Explora los documentos»</strong></a>
     <br />
     <br />
     ·
@@ -26,14 +26,9 @@
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary>Tabla de contenido</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+    <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -44,8 +39,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -59,14 +52,6 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-### Built With
-
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
-- [Laravel](https://laravel.com)
-
 ### Prerequisites
 
 El único requisito es que tengas en tu maquina instalado python, o en su defecto guardes los archivos en la nube de
@@ -78,9 +63,13 @@ Google para que puedas usarlos con Google Colab.
    ```sh
    git clone https://github.com/giovannilopez9808/Taller_python_ene2021.git
    ```
-2. Instala las dependencias
+2. Instala las dependencias de cada proyecto
    ```sh
-   npm install
+   pip install -r requirements.txt
+   ```
+   o 
+   ```sh
+   pip3 install -r requirements.txt
    ```
 
 <!-- CONTRIBUTING -->
@@ -106,11 +95,11 @@ Jesús Eduardo Loera Casas - jesusloera45@gmail.com
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/giovannilopez9808/Taller_python_ene2021.svg?style=for-the-badge
 [contributors-url]: https://github.com/giovannilopez9808/Taller_python_ene2021/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/giovannilopez9808/Taller_python_ene2021.svg?style=for-the-badge
 [forks-url]: https://github.com/giovannilopez9808/Taller_python_ene2021/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/giovannilopez9808/Taller_python_ene2021.svg?style=for-the-badge
 [stars-url]: https://github.com/giovannilopez9808/Taller_python_ene2021/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/giovannilopez9808/Taller_python_ene2021.svg?style=for-the-badge
 [issues-url]: https://github.com/giovannilopez9808/Taller_python_ene2021/issues
