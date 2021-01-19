@@ -20,7 +20,7 @@ class julia():
     def julia_algorithm(self, z):
         self.k = 0
         while abs(z) <= self.zmax and self.k < self.kmax:
-            z = z**2 + self.c
+            z = f(z, self.c)
             self.k += 1
         return self.k
 
@@ -35,17 +35,21 @@ class julia():
         plt.axis("off")
         plt.subplots_adjust(left=0, bottom=0.05, right=1, top=0.95)
         plt.imshow(self.image, cmap="inferno")
-        plt.savefig(path+name+".png",bbox_inches="tight",pad_inches=0,dpi=400)
+        plt.savefig(path+name+".png", bbox_inches="tight",
+                    pad_inches=0, dpi=400)
+
+
+def f(z, c):
+    return np.exp(z**2)+c
 
 
 parameters = {
     "size": 500,
-    "c": 0.4+0.7j,
-    "zmax": 4,
-    "kmax": 1000,
+    "c": -0.65,
+    "zmax": 100,
+    "kmax": 10,
     "min": -1.5,
-    "max": 1.5,
-}
+    "max": 1.5, }
 
 julia_image = julia(parameters["size"], parameters["c"],
                     parameters["zmax"], parameters["kmax"],
