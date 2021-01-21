@@ -44,12 +44,12 @@ def f(z, c):
 
 
 parameters = {
-    "size": 500,
+    "size": 2000,
     "c": -0.65,
     "zmax": 100,
     "kmax": 10,
-    "min": -1.5,
-    "max": 1.5, }
+    "min": -5,
+    "max": 5, }
 
 julia_image = julia(parameters["size"], parameters["c"],
                     parameters["zmax"], parameters["kmax"],
