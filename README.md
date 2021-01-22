@@ -40,10 +40,16 @@
       <ul>
         <li>Operaciones con matrices</li>
         <li>
-          Primer proyecto - Programar el
-          <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+          Primer proyecto - Sistemas complejos
+          <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
             >Juego de la vida</a
-          >
+          ></li>
+          <li><a href="https://es.wikipedia.org/wiki/Fractal">Fractales</a> de }
+          <a href="https://es.wikipedia.org/wiki/Conjunto_de_Julia">Julia</a>, 
+          <a href="https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot">Mandelbrot</a> y 
+          <a href="10.13140/RG.2.2.24949.40167">biológicos</a></li>
+          </ul>
         </li>
         <li>Lectura y escritura de datos</li>
       </ul>
@@ -53,10 +59,13 @@
         <li>Mapas de colores, imshow</li>
         <li>Leyendas con LaTeX</li>
         <li>
-          Segundo proyecto -
-          <a href="https://en.wikipedia.org/wiki/Edge_detection"
-            >Detección de bordes</a
-          >
+          Segundo proyecto - <a href?="https://es.wikipedia.org/wiki/Procesamiento_digital_de_im%C3%A1genes">
+          Procesamiento de imágenes</a>
+          <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Edge_detection"
+            >Detección de bordes</a></li>
+          <li><a href="http://www2.elo.utfsm.cl/~elo328/pdf1dpp/PDI09_Frecuencia_1dpp.pdf">Transformada de Fourier</a></li>
+          </ul>
         </li>
         <li></li>
       </ul>
