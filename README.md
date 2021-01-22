@@ -45,7 +45,7 @@
           <li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
             >Juego de la vida</a
           ></li>
-          <li><a href="https://es.wikipedia.org/wiki/Fractal">Fractales</a> de }
+          <li><a href="https://es.wikipedia.org/wiki/Fractal">Fractales</a> de 
           <a href="https://es.wikipedia.org/wiki/Conjunto_de_Julia">Julia</a>, 
           <a href="https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot">Mandelbrot</a> y 
           <a href="10.13140/RG.2.2.24949.40167">biológicos</a></li>
