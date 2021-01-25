@@ -73,11 +73,11 @@
       <ul>
         <li>Resolver integrales</li>
         <li>Resolver ecuaciones diferenciales</li>
-        <li>
-          Tercer proyecto -
-          <a href="https://en.wikipedia.org/wiki/Double_pendulum"
-            >Péndulo doble</a
-          >
+        <li>Tercer proyecto - Problemas físicos resueltos por medio de ecuaciones diferenciales
+        <ul>
+          <li><a href="https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Helmholtz">Ecuación de Helmholtz</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Double_pendulum">Péndulo doble</a></li>
+        </ul>
         </li>
         <li>Obtener eigenvalores y eigenvectores</li>
         <li>Estadística descriptiva</li>
