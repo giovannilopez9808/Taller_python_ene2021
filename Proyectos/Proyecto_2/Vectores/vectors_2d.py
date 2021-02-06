@@ -33,5 +33,5 @@ class vector_2d():
         x_i, y_i = self.p_i
         x_f, y_f = self.p_f
         color = self.color
-        plt.quiver(x_i, x_f, y_i, y_f, angles='xy',
+        plt.quiver(x_i, y_i, x_f, y_f, angles='xy',
                    scale_units='xy', scale=1, color=color)
