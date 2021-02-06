@@ -17,9 +17,15 @@ colors = colors()
 ################### GRAFICADOR EN 2D ###################
 limits = [[-3, 3], [-3, 3]]
 vectors_2d = vectors_2d(limits)
+<<<<<<< HEAD
 vectors_2d.create_vector([0, 0], [1, 1], colors.blue)
 vectors_2d.create_vector([1, 1], [1, 1], colors.red)
 vectors_2d.create_vector([0, 0], [2, 0], colors.purple)
+=======
+vector1 = vectors_2d.create_vector([0, 0], [1, 1], colors.blue)
+vector2 = vectors_2d.create_vector([1, 1], [1, 1], colors.red)
+vector3 = vectors_2d.create_vector([0, 0], [2, 0], colors.purple)
+>>>>>>> c76e2a81d5cbe75c58befeafa8d1b55ab1dd45fc
 vectors_2d.plot_vectors()
 
 ################### GRAFICADOR EN 3D ###################
