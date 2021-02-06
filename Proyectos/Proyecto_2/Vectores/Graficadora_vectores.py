@@ -1,74 +1,77 @@
 # Este programa fue elaborado por Jesús Loera
 
 # GRAFICADORA DE VECTORES EN EL PLANO
-
-# Para el curso de Mecánica Teórica 
-
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
-from numpy import linalg
+from mpl_toolkits.mplot3d import Axes3D
 
 
-
-############################### COLORES #################################
-############################ DE VECTORES ################################
-
-AZUL = 'b'
-VERDE = 'g'
-ROJO = 'r'
-CELESTE = 'c'
-MORADO = 'm'
-AMARILLO = 'y'
-NEGRO = 'k'
-
-#########################################################################
+class colors:
+    def __init__(self):
+        self.blue = '#00bbf9'
+        self.green = '#38b000'
+        self.red = '#e71d36'
+        self.purple = '#5a189a'
 
 
-# Creemos las funciones que nos ayudarán a gráficar
+class vector_2d():
+    def __init__(self, p_i, p_f, color):
+        self.p_i = p_i
+        self.p_f = p_f
+        self.color = color
 
-def Vectores3D(lista, limites ):
+    def plot(self):
+        x_i, y_i = self.p_i
+        x_f, y_f = self.p_f
+        color = self.color
+        plt.quiver(x_i, x_f, y_i, y_f, angles='xy',
+                   scale_units='xy', scale=1, color=color)
 
-    size = len(lista)
 
+class vector_3d(vector_2d):
+    def __init__(self, p_i, p_f, color):
+        super().__init__(p_i, p_f, color)
+
+    def plot(self, ax):
+        x_i, y_i, z_i = self.p_i
+        x_f, y_f, z_f = self.p_f
+        color = self.color
+        ax.quiver(x_i, y_i, z_i,
+                  x_f, y_f, z_f, length=1, color=color)
+    #########################################################################
+
+    # Creemos las funciones que nos ayudarán a gráficar
+
+
+def plot_vectors_3D(vectors, limits):
+    lim_x_i, lim_x_f = limits[0]
+    lim_y_i, lim_y_f = limits[1]
+    lim_z_i, lim_z_f = limits[2]
     fig = plt.figure()
     ax = fig.gca(projection='3d')
-
-    ax.axes.set_xlim3d(left=limites[0][0], right=limites[0][1]) 
-    ax.axes.set_ylim3d(bottom=limites[1][0], top=limites[1][1]) 
-    ax.axes.set_zlim3d(bottom=limites[2][0], top=limites[2][1]) 
-
-    for i in range (size):
-
-        ax.quiver( lista[i][0][0] , lista[i][0][1] , lista[i][0][2], \
-                    lista[i][1][0] , lista[i][1][1] , lista[i][1][2], length=1, color = lista[i][2] )
-
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.grid()
-    plt.show()
-
-def Vectores2D(lista, limites):
-
-    size = len(lista)
- 
-
-    for i in range (size):
-
-        plt.quiver( lista[i][0][0] , lista[i][0][1] , \
-                    lista[i][1][0] , lista[i][1][1], angles='xy', scale_units='xy', scale=1, color = lista[i][2] )
-
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.xlim(limites[0][0],limites[0][1])
-    plt.ylim(limites[1][0],limites[1][1])
+    ax.axes.set_xlim3d(left=lim_x_i, right=lim_x_f)
+    ax.axes.set_ylim3d(bottom=lim_y_i, top=lim_y_f)
+    ax.axes.set_zlim3d(bottom=lim_z_i, top=lim_z_f)
+    for vector in vectors:
+        vector.plot(ax)
     plt.grid()
     plt.show()
 
 
-########################################################
-########################################################
+def plot_vectors_2D(vectors, limits):
+    lim_x_i, lim_x_f = limits[0]
+    lim_y_i, lim_y_f = limits[1]
+    for vector in vectors:
+        vector.plot()
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.xlim(lim_x_i, lim_x_f)
+    plt.ylim(lim_y_i, lim_y_f)
+    plt.grid()
+    plt.show()
 
+
+colors = colors()
 ################### GRAFICADOR EN 2D ###################
 
 
@@ -78,49 +81,36 @@ def Vectores2D(lista, limites):
 #              origen   cabeza    color
 #               del       del      del
 #              vector    vector   vector
-vector1_2D = ( [0, 0], [1, 1],    AZUL  )
-vector2_2D = ( [1, 1], [1, 1],    ROJO  )
-vector3_2D = ( [0, 0], [2 ,0 ],   NEGRO )
-
+vector1 = vector_2d([0, 0], [1, 1], colors.blue)
+vector2 = vector_2d([0, 1], [2, 1], colors.red)
+vector3 = vector_2d([0, 0], [2, 1], colors.purple)
 
 # Añada en esta lista los vectores que va gráficar
-Vectores_2D = [ vector1_2D, vector2_2D, vector3_2D ]
+vectors = [vector1, vector2, vector3]
 
-#  LIMITES EN:       EJE X     EJE Y    
-Limites_ejes_2D = [ [-3, 3], [-3, 3] ]
-
+#  LIMITES EN:       EJE X     EJE Y
+limits = [[-3, 3], [-3, 3]]
 
 # LLAMEMOS AL GRAFICADOR 2D
-Vectores2D(Vectores_2D, Limites_ejes_2D)       # COMENTAR ESTA LINEA EN CASO DE NO QUERER GRAFICAR EN 2D
-
-
-
-
-########################################################
-########################################################
+plot_vectors_2D(vectors, limits)
 
 ################### GRAFICADOR EN 3D ###################
-
 # Creamos la lista de vectores a gráficar en el plano
-
-
 #              origen    dimensiones    color
 #               del         del          del
 #              vector      vector       vector
-vector1_3D = ( [0, 0, 0], [1, 1, 1],    AZUL )
-vector2_3D = ( [0, 0, 0], [2 ,0 ,0],    VERDE )
-vector3_3D = ( [0, 0, 0], [-1, -1, -1], ROJO )
+vector1 = vector_3d([0, 0, 0], [1, 1, 1],    colors.blue)
+vector2 = vector_3d([0, 0, 0], [2, 0, 0],    colors.green)
+vector3 = vector_3d([0, 0, 0], [-1, -1, -1], colors.red)
 
 # Añada en esta lista los vectores que va a gráficar
-Vectores_3D = [ vector1_3D, vector2_3D, vector3_3D ]
-
+Vectores_3D = [vector1, vector2, vector3]
 
 #  LIMITES EN:   EJE X     EJE Y    EJE Z
-Limites_ejes_3D = [ [-3, 3], [-3, 3], [-3, 3] ]
-
+Limites_ejes_3D = [[-3, 3], [-3, 3], [-3, 3]]
 
 # LLAMEMOS AL GRAFICADOR 3D
-Vectores3D(Vectores_3D, Limites_ejes_3D)       # COMENTAR ESTA LINEA EN CASO DE NO QUERER GRAFICAR EN 3D
-
+# COMENTAR ESTA LINEA EN CASO DE NO QUERER GRAFICAR EN 3D
+plot_vectors_3D(Vectores_3D, Limites_ejes_3D)
 
 #########################################################################
