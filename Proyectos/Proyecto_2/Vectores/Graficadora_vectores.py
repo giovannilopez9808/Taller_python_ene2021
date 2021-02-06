@@ -21,7 +21,6 @@ vectors_2d.create_vector([0, 0], [1, 1], colors.blue)
 vectors_2d.create_vector([1, 1], [1, 1], colors.red)
 vectors_2d.create_vector([0, 0], [2, 0], colors.purple)
 vectors_2d.plot_vectors()
-
 ################### GRAFICADOR EN 3D ###################
 # limits = [[-3, 3], [-3, 3], [-3, 3]]
 # vectors_3d = vectors_3d(limits)
