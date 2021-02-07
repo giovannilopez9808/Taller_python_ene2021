@@ -44,20 +44,20 @@ class double_pendulum:
         plt.clf()
 
     def create_animation(self, path=""):
-        # # Se realizara la animación
-        # self.k = np.size(self.solve[:, 0])
-        # self.x1 = self.solve[:, 0]
-        # self.x2 = self.x1 + self.lon*np.sin(self.solve[:, 2])
-        # self.y1 = 0
-        # self.y2 = -self.lon*np.cos(self.solve[:, 2])
+        # Se realizara la animación
+        self.k = np.size(self.solve[:, 0])
+        self.x1 = self.solve[:, 0]
+        self.x2 = self.x1 + self.lon*np.sin(self.solve[:, 2])
+        self.y1 = 0
+        self.y2 = -self.lon*np.cos(self.solve[:, 2])
 
-        # # Maximos y minimos del grafico
-        # self.ylim = [-self.solve.max()-0.3, 0.3]
-        # self.xlim = [self.x2.min()-0.3, self.x2.max()+0.3]
-        # # Graficamos el pendulo en el plano cartesiano
-        # print("Simulando y graficando la dinamica del pendulo doble")
-        # for i in range(self.k):
-        #     self.plot_pendulum(path, i)
+        # Maximos y minimos del grafico
+        self.ylim = [-self.solve.max()-0.3, 0.3]
+        self.xlim = [self.x2.min()-0.3, self.x2.max()+0.3]
+        # Graficamos el pendulo en el plano cartesiano
+        print("Simulando y graficando la dinamica del pendulo doble")
+        for i in range(self.k):
+            self.plot_pendulum(path, i)
         make_animation(path=path)
 
     def plot_pendulum(self, path, i):
