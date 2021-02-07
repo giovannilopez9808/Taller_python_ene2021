@@ -16,16 +16,16 @@ class colors:
 colors = colors()
 ################### GRAFICADOR EN 2D ###################
 limits = [[-3, 3], [-3, 3]]
-vectors_2d = vectors_2d(limits)
-vectors_2d.create_vector([0, 0], [1, 1], colors.blue)
-vectors_2d.create_vector([1, 1], [1, 1], colors.red)
-vectors_2d.create_vector([0, 0], [2, 0], colors.purple)
-vectors_2d.plot_vectors()
+system_2d = vectors_2d(limits)
+system_2d.create_vector([0, 0], [1, 1], colors.blue)
+system_2d.create_vector([1, 1], [1, 1], colors.red)
+system_2d.create_vector([0, 0], [2, 0], colors.purple)
+system_2d.plot_vectors()
 ################### GRAFICADOR EN 3D ###################
 limits = [[-3, 3], [-3, 3], [-3, 3]]
-vectors_3d = vectors_3d(limits)
-vector1 = vectors_3d.create_vector([0, 0, 0], [1, 1, 1],    colors.blue)
-vector2 = vectors_3d.create_vector([0, 0, 0], [2, 0, 0],    colors.green)
-vector3 = vectors_3d.create_vector([0, 0, 0], [-1, -1, -1], colors.red)
-vectors_3d.plot_vectors()
+system_3d = vectors_3d(limits)
+system_3d.create_vector([0, 0, 0], [1, 1, 1],    colors.blue)
+system_3d.create_vector([0, 0, 0], [2, 0, 0],    colors.green)
+system_3d.create_vector([0, 0, 0], [-1, -1, -1], colors.red)
+system_3d.plot_vectors()
 #########################################################################
