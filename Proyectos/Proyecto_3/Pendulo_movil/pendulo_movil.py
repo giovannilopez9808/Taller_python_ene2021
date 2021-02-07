@@ -45,9 +45,4 @@ system = double_pendulum(
 )
 system.resolve_ED(df, g=9.81)
 system.plot_velocity_and_position()
-
-# # Creamos el gif
-# print("Creando Gif")
-# duration = 0.1
-# filenames = sorted(os.listdir)
-# create_gif(filenames, duration)
+system.create_animation(path="Graphics/")

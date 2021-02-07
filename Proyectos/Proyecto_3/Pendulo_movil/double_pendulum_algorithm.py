@@ -44,34 +44,36 @@ class double_pendulum:
         plt.clf()
 
     def create_animation(self, path=""):
-        # Se realizara la animación
-        self.k = np.size(self.solve[:, 0])
-        self.x1 = self.solve[:, 0]
-        self.x2 = self.x1 + self.lon*np.sin(self.solve[:, 2])
-        self.y1 = 0
-        self.y2 = -self.lon*np.cos(self.solve[:, 2])
+        # # Se realizara la animación
+        # self.k = np.size(self.solve[:, 0])
+        # self.x1 = self.solve[:, 0]
+        # self.x2 = self.x1 + self.lon*np.sin(self.solve[:, 2])
+        # self.y1 = 0
+        # self.y2 = -self.lon*np.cos(self.solve[:, 2])
 
-        # Maximos y minimos del grafico
-        self.ylim = [-self.solve-0.3, 0.3]
-        self.xlim = [x2.min()-0.3, x2.max()+0.3]
-        # Graficamos el pendulo en el plano cartesiano
-        print("Simulando y graficando la dinamica del pendulo doble")
-        for i in range(k):
-            self.plot_pendulum(path, i)
-        create_gif(path)
+        # # Maximos y minimos del grafico
+        # self.ylim = [-self.solve.max()-0.3, 0.3]
+        # self.xlim = [self.x2.min()-0.3, self.x2.max()+0.3]
+        # # Graficamos el pendulo en el plano cartesiano
+        # print("Simulando y graficando la dinamica del pendulo doble")
+        # for i in range(self.k):
+        #     self.plot_pendulum(path, i)
+        make_animation(path=path)
 
     def plot_pendulum(self, path, i):
-        name = "0"*(len(str(k)-len(str(i+1))))+str(i+1)
-        plt.xlim(self.xlim[0], self.xlim[1])
-        plt.ylim(self.ylim[0], self.ylim[1])
+        name = "0"*(len(str(self.k))-len(str(i+1)))+str(i+1)
+        x_lim_i,x_lim_f=self.xlim
+        y_lim_i,y_lim_f=self.ylim
+        plt.xlim(x_lim_i, x_lim_f)
+        plt.ylim(y_lim_i, y_lim_f)
         plt.axis("off")
         plt.scatter(self.x1[i], 0, c="red")
         plt.plot([self.x1[i], self.x2[i]], [
                  0, self.y2[i]], ls="-", color='blue')
         plt.scatter(self.x2[i], self.y2[i], c="red")
-        self.plot_past()
-        plt.title('Tiempo: ' + str(round(t[i], 2)))
-        plt.savefig(path+str(i) + ".png")
+        self.plot_past(i)
+        plt.title('Tiempo: ' + str(round(self.time[i], 2)))
+        plt.savefig(path+name+".png")
         plt.clf()
 
     def plot_past(self, i):
