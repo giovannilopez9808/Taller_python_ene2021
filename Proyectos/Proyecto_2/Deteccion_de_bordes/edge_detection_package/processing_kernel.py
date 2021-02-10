@@ -3,6 +3,10 @@ import numpy as np
 
 
 def edge_kernels():
+    """
+    Kernel (matriz de transformacion) para la deteccion de bordes en imagenes
+    de alta resolución
+    """
     # sobel = np.array([
     #     [2, 2, 4, 2, 2],
     #     [1,  1,  2,  1, -1],
@@ -38,6 +42,10 @@ def edge_kernels():
 
 
 def convolve_images(img, kernel):
+    """
+    Proceso de convolución (multiplicacion de matrices) en la images con el kernel
+    seleccionado
+    """
     img_edge_x = signal.convolve2d(
         img, kernel, boundary='symm', mode='same')
     img_edge_y = signal.convolve2d(

@@ -14,8 +14,11 @@ parameters = {
     "min": -5,
     "max": 5, }
 
-julia_image = julia(parameters["size"], parameters["c"],
-                    parameters["zmax"], parameters["kmax"],
-                    parameters["min"], parameters["max"])
+julia_image = julia(parameters["size"],
+                    parameters["c"],
+                    parameters["zmax"],
+                    parameters["kmax"],
+                    parameters["min"],
+                    parameters["max"])
 julia_image.interact_system(f)
 julia_image.plot_system()

@@ -2,6 +2,9 @@ import cv2
 
 
 def high_contrast_image(img):
+    """
+    Funcion que aplica el alto contraste a la imagen cargada
+    """
     # CLAHE (Contrast Limited Adaptive Histogram Equalization)
     clahe = cv2.createCLAHE(clipLimit=3., tileGridSize=(8, 8))
 
