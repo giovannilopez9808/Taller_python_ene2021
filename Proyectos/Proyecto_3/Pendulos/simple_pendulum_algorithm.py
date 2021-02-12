@@ -51,5 +51,6 @@ class simple_pendulum:
 
     def plot_past(self, i):
         for n in range(i):
+            alpha = calc_alpha(n, i)
             plt.plot([self.x[n], self.x[n+1]],
-                     [self.y[n], self.y[n+1]], c="green", ls="--")
+                     [self.y[n], self.y[n+1]], c="green", ls="--", alpha=alpha)

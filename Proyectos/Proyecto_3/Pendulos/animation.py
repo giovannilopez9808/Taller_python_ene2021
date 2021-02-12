@@ -31,3 +31,9 @@ def clip_maker(output_file, path):
 def make_animation(name="animation", duration=0.1, path="", delete=True):
     create_gif(name,duration,path,delete)
     clip_maker(name,path)
+
+def calc_alpha(walk,total):
+    alpha=(walk-total+10)/10
+    if alpha<0:
+        alpha=0
+    return alpha

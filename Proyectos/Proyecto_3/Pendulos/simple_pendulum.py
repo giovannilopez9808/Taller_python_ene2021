@@ -1,5 +1,5 @@
 # Este programa fue hecho por Jesus Eduardo Loera Casas
-from simpĺe_pendulum_algorithm import *
+from simple_pendulum_algorithm import *
 import numpy as np
 
 # Definimos la funcion derivada

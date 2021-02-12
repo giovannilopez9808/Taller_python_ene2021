@@ -58,12 +58,12 @@ class double_pendulum:
         print("Simulando y graficando la dinamica del pendulo doble")
         for i in range(self.k):
             self.plot_pendulum(path, i)
-        make_animation(path=path,name="movil_pendulum")
+        make_animation(path=path, name="movil_pendulum")
 
     def plot_pendulum(self, path, i):
         name = "0"*(len(str(self.k))-len(str(i+1)))+str(i+1)
-        x_lim_i,x_lim_f=self.xlim
-        y_lim_i,y_lim_f=self.ylim
+        x_lim_i, x_lim_f = self.xlim
+        y_lim_i, y_lim_f = self.ylim
         plt.xlim(x_lim_i, x_lim_f)
         plt.ylim(y_lim_i, y_lim_f)
         plt.axis("off")
@@ -78,7 +78,8 @@ class double_pendulum:
 
     def plot_past(self, i):
         for n in range(i):
+            alpha = calc_alpha(n, i)
             plt.plot([self.x1[n], self.x1[n+1]],
-                     [0, 0], ls="--", color="green")
+                     [0, 0], ls="--", color="green", alpha=alpha)
             plt.plot([self.x2[n], self.x2[n+1]], [self.y2[n], self.y2[n+1]],
-                     ls="--", color="green")
+                     ls="--", color="green", alpha=alpha)

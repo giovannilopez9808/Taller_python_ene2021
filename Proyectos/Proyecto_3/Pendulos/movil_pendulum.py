@@ -28,7 +28,7 @@ input = {
     "masa 1": 2,
     "masa 2": 2,
     "longitud": 2,
-    "tiempo maximo": 40,
+    "tiempo maximo": 10,
     "delta tiempo": 0.1,
 }
 
