@@ -3,11 +3,12 @@ import numpy as np
 
 
 def f(z, c):
-    return np.exp(z**2)+c
+    return np.sinh(z)+c
+    # return np.exp(z**2)+c
 
 
 parameters = {
-    "size": 2000,
+    "size": 1000,
     "c": -0.65,
     "zmax": 100,
     "kmax": 10,
