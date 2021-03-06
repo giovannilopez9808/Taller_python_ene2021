@@ -10,5 +10,5 @@ ax1.plot(data_solution["R"], data_solution["Solution"])
 # Eliminacion de las etiquetas de la grafica dererecha
 ax2.axis("off")
 ax2.contourf(data_map, cmap="inferno_r")
-plt.savefig("circulos.png", transparent=False)
-plt.show()
+plt.savefig("circulos.eps")
+# plt.show()

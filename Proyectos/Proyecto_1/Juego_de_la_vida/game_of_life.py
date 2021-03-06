@@ -4,7 +4,7 @@
 from packages import *
 parameters = {
     "dimension": 100,
-    "caminatas": 20,
+    "caminatas": 200,
     "supervivencia": 0.9,
 }
 campo = game(parameters["dimension"], parameters["supervivencia"])

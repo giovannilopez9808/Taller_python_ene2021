@@ -10,7 +10,9 @@ def image_plot(data, number, lim):
     plt.axis("off")
     plt.title("Walk number "+name)
     plt.imshow(data, cmap="gist_gray")
-    plt.savefig(name+".png")
+    plt.savefig(name+".png",
+                bbox_inches="tight",
+                pad_inches=0,)
     plt.clf()
 
 
