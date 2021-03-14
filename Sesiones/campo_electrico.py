@@ -31,13 +31,13 @@ class system:
 
     def plot_charges(self):
         for charge in self.charges:
-            x, y = charge.r
+            y, x = charge.r
             plt.scatter(x, y, color="red")
 
 
 class charge:
     def __init__(self, q, r):
-        self.r = np.array(r)
+        self.r = np.array([r[1], r[0]])
         self.q = q
 
     def calc_field(self, r_i):
@@ -58,9 +58,9 @@ y = np.arange(-inputs["limits"],
               inputs["limits"]+inputs["delta"],
               inputs["delta"],)
 system = system(x, y)
-system.append_particles(1, [2, 2])
-system.append_particles(-1, [2, -2])
-system.append_particles(1, [-2, 2])
-system.append_particles(-1, [-2, -2])
+system.append_particles(1, [0, 3])
+system.append_particles(-1, [0, -2])
+# system.append_particles(1, [-2, 2])
+# system.append_particles(-1, [-2, -2])
 system.calc_field()
 system.plot_field()
