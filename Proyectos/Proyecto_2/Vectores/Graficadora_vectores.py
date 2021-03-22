@@ -5,7 +5,7 @@ from vectors_3d import *
 # GRAFICADORA DE VECTORES EN EL PLANO
 
 
-class colors:
+class colors_palette:
     def __init__(self):
         self.blue = '#00bbf9'
         self.green = '#38b000'
@@ -13,7 +13,7 @@ class colors:
         self.purple = '#5a189a'
 
 
-colors = colors()
+colors = colors_palette()
 ################### GRAFICADOR EN 2D ###################
 limits = [[-3, 3], [-3, 3]]
 system_2d = vectors_2d(limits)
