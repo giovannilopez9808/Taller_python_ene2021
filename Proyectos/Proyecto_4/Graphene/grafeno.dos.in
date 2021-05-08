@@ -1,0 +1,11 @@
+grafeno 
+&dos
+    prefix = 'grafeno',
+    outdir = './grafeno',
+    fildos = 'grafeno_dos.dat',
+    degauss = 0.01, 
+    Emin = -5.0, 
+    Emax = 5.0, 
+    DeltaE = 0.01, 
+/
+ 

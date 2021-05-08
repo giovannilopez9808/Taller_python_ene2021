@@ -1,0 +1,44 @@
+&control
+    calculation = 'nscf',
+    tprnfor = True, 
+    tstress = False, 
+    pseudo_dir = '/opt/verano2018/pseudos/',
+    title = 'grafeno',
+    prefix = 'grafeno',
+    outdir = './grafeno',
+/
+ 
+&system
+    ibrav = 0, 
+    nat = 2, 
+    ecutwfc = 30.0, 
+    ecutrho = 120.0, 
+    occupations = 'smearing',
+    smearing = 'gauss',
+    degauss = 0.001, 
+    ntyp = 1, 
+/
+ 
+&electrons
+    conv_thr = 1e-10, 
+/
+ 
+&ions
+    ion_dynamics = 'none',
+/
+ 
+&cell
+    cell_dynamics = 'none',
+/
+ 
+ATOMIC_SPECIES
+C  12.01  C.upf 
+ATOMIC_POSITIONS crystal 
+C   0.000000000  0.000000000  0.000000000 
+C   0.333333333  0.666666667  0.000000000 
+CELL_PARAMETERS angstrom 
+ 2.467470000  0.000000000  0.000000000 
+-1.233735000  2.136891703  0.000000000 
+ 0.000000000  0.000000000 15.000000000 
+K_POINTS automatic
+  9   9   1   0   0   0
