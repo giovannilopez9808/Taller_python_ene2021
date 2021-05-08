@@ -105,7 +105,7 @@
           x(i) = x(i)+dt*vx(i)
           y(i) = y(i)+dt*vy(i)
         end do
-        write(*,*)k,ekin/(3*n),epot/(n*n)
+        !write(*,*)k,ekin/(3*n),epot/(n*n)
         if(mod(k,iprint).EQ.0) then
           write(2,*)k
           write(3,*)k
